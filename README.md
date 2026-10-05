@@ -1,16 +1,30 @@
-# AD-Lab-WMware
-Mục tiêu dự án (1-2 câu): "Xây dựng hạ tầng Active Directory on-premise mô phỏng môi trường doanh nghiệp nhỏ."
+# Active Directory Lab (On-Premise, VMware Workstation Pro)
 
-Sơ đồ kiến trúc (vẽ bằng draw.io hoặc Excalidraw, xuất PNG).
+## Mục tiêu
+Xây dựng hạ tầng Active Directory mô phỏng môi trường doanh nghiệp nhỏ,
+thực hành quản trị AD DS, DNS, DHCP, GPO.
 
-Công nghệ sử dụng: VMware Workstation Pro, Windows Server 2022, Windows 11.
+## Công nghệ sử dụng
+- VMware Workstation Pro
+- Windows Server 2022 (Domain Controller)
+- Windows 11 (Client)
 
-Những gì đã làm được — liệt kê cụ thể:
-Promote Domain Controller, cấu hình DNS/DHCP
-Tạo OU theo phòng ban, user, security group
-Group Policy: password policy, map drive, chặn USB...
-Join client vào domain
+## Sơ đồ kiến trúc
+<!-- Chèn ảnh architecture-diagram.png khi vẽ xong -->
 
-Vấn đề gặp phải và cách xử lý (phần này quan trọng nhất với nhà tuyển dụng — chứng minh bạn hiểu chứ không chỉ làm theo hướng dẫn).
+## Tiến độ
+- [ ] Cài Windows Server, promote Domain Controller
+- [ ] Cấu hình DNS, DHCP
+- [ ] Tạo OU, user, security group
+- [ ] Cấu hình GPO (password policy, map drive, chặn USB)
+- [ ] Join client vào domain
+- [ ] File Server + phân quyền NTFS/Share
+- [ ] Backup và test restore
 
-Hướng phát triển tiếp theo.
+## Vấn đề gặp phải
+<!-- Ghi lại mỗi khi gặp lỗi và cách xử lý -->
+
+## Hướng phát triển tiếp theo
+- Đồng bộ lên Microsoft Entra ID (Entra Connect)
+- Microsoft 365: user, license, MFA, Conditional Access
+- Azure VM + NSG + RBAC
