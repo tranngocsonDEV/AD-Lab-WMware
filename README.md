@@ -23,6 +23,9 @@ thực hành quản trị AD DS, DNS, DHCP, GPO.
 
 ## Vấn đề gặp phải
 <!-- Ghi lại mỗi khi gặp lỗi và cách xử lý -->
+<p align="center">
+  <img src="./images/network_configuration.png" width="500">
+</p>
 <img>![alt text](image-1.png)</img>
 ## Hướng phát triển tiếp theo
 - Đồng bộ lên Microsoft Entra ID (Entra Connect)
