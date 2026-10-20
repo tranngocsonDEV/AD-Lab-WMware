@@ -19,7 +19,7 @@ Quy mô công ty giả định
 | Đối tượng | Format | Ví dụ |
 | --- | --- | --- |
 | Username	| `firstname.lastname` | `son.tran` |
-| Email | `firstname.lastname@techcorp.local` | `son.tran@techcorp.local` |
+| Email | `firstname.lastname@techcorpVN.local` | `son.tran@techcorpVN.local` |
 | Máy tính | `TC-{DEPT}-{SỐ}` | `TC-SALES-001` |
 | Security Group | `SG-{DEPT}-{Mục đích}` | `SG-SALES-FileAccess` |
 | GPO | `GPO-{DEPT}-{Mục đích}` | `GPO-HR-USBBlock` |
@@ -79,7 +79,7 @@ Cấu trúc CSV mẫu (users.csv):
 
 ## Sơ đồ kiến trúc
 ```directory
-techcorp.local
+techcorpVN.local
 ├── OU=Departments
 │   ├── OU=IT
 │   │   ├── OU=Users
