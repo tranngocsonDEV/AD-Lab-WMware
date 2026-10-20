@@ -35,6 +35,23 @@ Quy mô công ty giả định
 | SG-MGMT-FullAccess | 5 user Management | Truy cập tất cả share (read-only) |
 | SG-AllStaff-VPN | 50 user | Được phép kết nối WireGuard VPN |
 
+### GPO cụ thể theo từng OU
+| GPO | Áp cho OU | Nội dung cụ thể |
+| --- | --- | --- |
+| GPO-Domain-PasswordPolicy	| Toàn domain | Độ dài tối thiểu 10 ký tự, phức tạp bắt buộc, hết hạn 90 ngày, khóa 5 lần nhập sai trong 15 phút |
+| GPO-Domain-ScreenLock | Toàn domain | Tự khóa màn hình sau 10 phút không thao tác |
+| GPO-IT-RDPAllow | OU=IT | Cho phép Remote Desktop |
+| GPO-HR-USBBlock | OU=HR, OU=Finance | Chặn USB storage (ngăn rò rỉ dữ liệu lương/tài chính) |
+| GPO-Sales-MapDrive | OU=Sales | Tự động map ổ Z: vào \DC01\Sales khi đăng nhập |
+| GPO-AllStaff-Wallpaper | Toàn domain | Đặt wallpaper + tên công ty, khóa không cho đổi |
+| GPO-MGMT-NoControlPanel | OU=Management | Ẩn Control Panel/Settings (giảm rủi ro người dùng ít kỹ thuật tự sửa cấu hình) |
+
+### Password Policy 
+- Minimum password length: 10
+- Password history: 2 
+- Maximum password age: 90 ngày
+- Account lockout threshold: 5 lần
+- Account lockout duration: 15 phút
 ## Công nghệ sử dụng
 - VMware Workstation Pro
 - Windows Server 2022 (Domain Controller)
