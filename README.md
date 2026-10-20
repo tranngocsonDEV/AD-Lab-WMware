@@ -3,7 +3,24 @@
 ## Mục tiêu
 Xây dựng hạ tầng Active Directory mô phỏng môi trường doanh nghiệp nhỏ,
 thực hành quản trị AD DS, DNS, DHCP, GPO.
+Quy mô công ty giả định
 
+Công ty: TechCorp Vietnam — 50 nhân sự, 6 phòng ban
+
+| Phòng ban | Số lượng user | Viết tắt OU |
+| --- | --- | --- |
+| IT	| 5 | IT |
+| HR (Nhân sự) | 5 | HR |
+| Finance (Tài chính - Kế toán) | 8 | FIN |
+| Sales (Kinh doanh) | 20 | SALES |
+| Marketing | 7 | MKT |
+| Management (Ban giám đốc) | 5 | MGMT |
+
+Quy ước đặt tên (Naming Convention) 
+| Đối tượng | Format | Ví dụ |
+| --- | --- | --- |
+| Username	| firstname.lastname | son.tran |
+| HR (Nhân sự) | 5 | HR |
 ## Công nghệ sử dụng
 - VMware Workstation Pro
 - Windows Server 2022 (Domain Controller)
