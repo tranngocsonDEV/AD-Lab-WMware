@@ -52,6 +52,18 @@ Quy mô công ty giả định
 - Maximum password age: 90 ngày
 - Account lockout threshold: 5 lần
 - Account lockout duration: 15 phút
+
+### Tự động hóa tạo user bằng PowerShell
+Cấu trúc CSV mẫu (users.csv):
+
+### File Server
+| Share | Đường dẫn | Quota | Quyền truy cập |
+| --- | --- | --- | --- |
+| \DC01\HR	| D:\Shares\HR | 20GB | SG-HR-FileAccess (Modify) |
+| \DC01\Finance	| D:\Shares\Finance | 30GB | SG-FIN-FileAccess (Modify) |
+| \DC01\Sales	| D:\Shares\Sales |50GB | SG-SALES-FileAccess (Modify) |
+| \DC01\Public	| D:\Shares\Public | 10GB | Toàn domain (Read) |
+
 ## Công nghệ sử dụng
 - VMware Workstation Pro
 - Windows Server 2022 (Domain Controller)
