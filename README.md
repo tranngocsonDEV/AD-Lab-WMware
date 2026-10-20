@@ -38,7 +38,7 @@ Quy mô công ty giả định
 ### GPO cụ thể theo từng OU
 | GPO | Áp cho OU | Nội dung cụ thể |
 | --- | --- | --- |
-| GPO-Domain-PasswordPolicy	| Toàn domain | Độ dài tối thiểu 10 ký tự, phức tạp bắt buộc, hết hạn 90 ngày, khóa 5 lần nhập sai trong 15 phút |
+| GPO-Domain-PasswordPolicy	| Toàn domain | Độ dài tối thiểu 10 ký tự, phức tạp bắt buộc, hết hạn 180 ngày, khóa 5 lần nhập sai trong 15 phút |
 | GPO-Domain-ScreenLock | Toàn domain | Tự khóa màn hình sau 10 phút không thao tác |
 | GPO-IT-RDPAllow | OU=IT | Cho phép Remote Desktop |
 | GPO-HR-USBBlock | OU=HR, OU=Finance | Chặn USB storage (ngăn rò rỉ dữ liệu lương/tài chính) |
@@ -49,7 +49,7 @@ Quy mô công ty giả định
 ### Password Policy 
 - Minimum password length: 10
 - Password history: 2 
-- Maximum password age: 90 ngày
+- Maximum password age: 180 ngày
 - Account lockout threshold: 5 lần
 - Account lockout duration: 15 phút
 
