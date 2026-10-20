@@ -5,8 +5,7 @@ Xây dựng hạ tầng Active Directory mô phỏng môi trường doanh nghi�
 thực hành quản trị AD DS, DNS, DHCP, GPO.
 Quy mô công ty giả định
 
-Công ty: TechCorp Vietnam — 50 nhân sự, 6 phòng ban
-
+### Công ty: TechCorp Vietnam — 50 nhân sự, 6 phòng ban
 | Phòng ban | Số lượng user | Viết tắt OU |
 | --- | --- | --- |
 | IT	| 5 | IT |
@@ -16,11 +15,25 @@ Công ty: TechCorp Vietnam — 50 nhân sự, 6 phòng ban
 | Marketing | 7 | MKT |
 | Management (Ban giám đốc) | 5 | MGMT |
 
-Quy ước đặt tên (Naming Convention) 
+### Quy ước đặt tên (Naming Convention) 
 | Đối tượng | Format | Ví dụ |
 | --- | --- | --- |
-| Username	| firstname.lastname | son.tran |
-| HR (Nhân sự) | 5 | HR |
+| Username	| `firstname.lastname` | `son.tran` |
+| Email | `firstname.lastname@techcorp.local` | `son.tran@techcorp.local` |
+| Máy tính | `TC-{DEPT}-{SỐ}` | `TC-SALES-001` |
+| Security Group | `SG-{DEPT}-{Mục đích}` | `SG-SALES-FileAccess` |
+| GPO | `GPO-{DEPT}-{Mục đích}` | `GPO-HR-USBBlock` |
+### Security Group 
+| Nhóm | Thành viên | Mục đích |
+| --- | --- | --- |
+| SG-IT-Admins	| 2 user IT | Toàn quyền quản trị domain |
+| SG-IT-Helpdesk | 3 user IT | Chỉ reset password, không sửa GPO |
+| SG-HR-FileAccess | 5 user HR | Truy cập share \DC01\HR |
+| SG-FIN-FileAccess | 5 user HR | Truy cập share \DC01\HR |
+| SG-SALES-FileAccess | 5 user HR | Truy cập share \DC01\HR |
+| SG-MGMT-FullAccess | 5 user Management | Truy cập share \DC01\HR |
+| SG-AllStaff-VPN | 50 user | Được phép kết nối WireGuard VPN |
+
 ## Công nghệ sử dụng
 - VMware Workstation Pro
 - Windows Server 2022 (Domain Controller)
