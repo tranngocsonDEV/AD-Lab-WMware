@@ -64,6 +64,14 @@ Cấu trúc CSV mẫu (users.csv):
 | \DC01\Sales	| D:\Shares\Sales |50GB | SG-SALES-FileAccess (Modify) |
 | \DC01\Public	| D:\Shares\Public | 10GB | Toàn domain (Read) |
 
+### Dải địa chỉ IP 
+| Thành phần | Dải IP | Ghi chú |
+| --- | --- | --- |
+| Mạng Server	| 192.168.10.0/24 | DC01: 192.168.10.1 |
+| Mạng Client	| 192.168.20.0/24 | DHCP scope 192.168.20.100-200 |
+| DNS	| 192.168.10.1 | Trỏ về DC01 |
+| Default Gateway	| 192.168.20.1 | 	(pfSense sau này) |
+
 ## Công nghệ sử dụng
 - VMware Workstation Pro
 - Windows Server 2022 (Domain Controller)
